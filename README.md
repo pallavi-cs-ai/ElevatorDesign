@@ -32,8 +32,9 @@ The project simulates how passengers request an elevator, board it, and exit at 
 
 # System Architecture 
 
-The system follows a **Producer–Consumer architecture** where the `People` thread generates elevator requests, and the `Elevator` thread consumes those requests from a synchronized shared queue. The `MachineRoomElevator` coordinates elevator movement, passenger boarding, and passenger exit while maintaining the elevator state.
+The system follows a **Producer–Consumer architecture** where the `**People**` thread generates elevator requests, and the `**Elevator**` thread consumes those requests from a synchronized shared queue. The `**MachineRoomElevator**` coordinates elevator movement, passenger boarding, and passenger exit while maintaining the elevator state.
 
+The following diagram illustrates the interaction between the controller, producer thread, consumer thread, shared passenger queue, and elevator subsystem.
 <p align="center">
  <img width="1536" height="1024" alt="elevator_system_architecture" src="https://github.com/user-attachments/assets/1ddb0d20-f0a2-4802-96fa-8936ddeeb172" />
 </p>
